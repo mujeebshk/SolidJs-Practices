@@ -1,0 +1,40 @@
+.inline {
+  width: 70%;
+  margin: 1em;
+  position: absolute;
+  left: 18%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  /* width: 100%; */
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  /* width: 100%; */
+  padding: 10px;
+  /* text-align: center; */
+  margin-bottom: 3px;
+  border: 1px solid #eee;
+  border-radius: 0.2em;
+}
+.border {
+  margin: 5em 0 0 0;
+  border-bottom: 2px solid #eee;
+  height: fit-content;
+  width: 77em;
+  position: absolute;
+  left: 13em;
+}
