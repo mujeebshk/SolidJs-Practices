@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: #efefef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.link {
+  color: #b318f0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.block {
+  display: block ruby;
+  position: relative;
+  display: grid;
+  /* justify-content: space-between; */
+}
+.right {
+  position: absolute;
+  right: 0;
+  padding: 0;
+}
+.all {
+  display: block;
+}
+.padding {
+  padding: 0;
+}
+.avatar {
+  position: absolute;
+  right: 0.2em;
+  top: 0.8em;
+}
+.title {
+  position: relative;
+  left: 2em;
+  top: 1.4em;
+}
+
+/* Remove default bullets */
+ul,
+.myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+.marginTop {
+  margin-top: 3em;
+}
+
+.input {
+  border-radius: 50px;
+  width: 20em;
+  padding: 1em;
+}
+.search {
+  width: 20em;
+  display: contents;
+}

@@ -1,0 +1,53 @@
+.Nav {
+  background-color: rgb(44, 45, 50);
+}
+
+.Nav button {
+  color: white;
+  display: block;
+  margin: 1em;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.Nav button:hover {
+  font-weight: bold;
+}
+
+/* uhukk */
+
+.growwrap {
+  /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+  display: grid;
+}
+.growwrap::after {
+  /* Note the weird space! Needed to preventy jumpy behavior */
+  content: attr(data-replicated-value) " ";
+
+  /* This is how textarea text behaves */
+  white-space: pre-wrap;
+
+  /* Hidden from view, clicks, and screen readers */
+  visibility: hidden;
+}
+.growwrap > textarea {
+  /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+  resize: none;
+
+  /* Firefox shows scrollbar on growth, you can hide like this. */
+  overflow: hidden;
+}
+.growwrap > textarea,
+.growwrap::after {
+  /* Identical styling required!! */
+  border: 1px solid black;
+  padding: 0.5rem;
+  font: inherit;
+
+  /* Place on top of each other */
+  grid-area: 1 / 1 / 2 / 2;
+}
